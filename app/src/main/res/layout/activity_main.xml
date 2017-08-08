@@ -39,10 +39,75 @@
         app:layout_constraintLeft_toRightOf="@id/clock_center"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="*/drawable-anydp-v21/ic_check_black_24dp.xml"
-        app:layout_constraintTop_toBottomOf="@id/clock_center"/>
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/ic_check_black_24dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/clock_center"/>-->
+
+	<CheckBox
+		android:id="@+id/setBox1"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_marginTop="20dp"
+		android:button="@drawable/custom_checkbox"
+		android:checked="true"
+		app:layout_constraintLeft_toRightOf="parent"
+		app:layout_constraintRight_toLeftOf="@id/setBox2"
+		app:layout_constraintTop_toBottomOf="@id/clock_minutes"
+		android:scaleX="1.7"
+		android:scaleY="1.7"/>
+
+	<CheckBox
+		android:id="@+id/setBox2"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_marginTop="20dp"
+		android:button="@drawable/custom_checkbox"
+		android:checked="true"
+		app:layout_constraintLeft_toRightOf="@id/setBox1"
+		app:layout_constraintRight_toLeftOf="@id/setBox3"
+		app:layout_constraintTop_toBottomOf="@id/clock_minutes"
+		android:scaleX="1.7"
+		android:scaleY="1.7"/>
+
+	<CheckBox
+		android:id="@+id/setBox3"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_marginTop="20dp"
+		android:button="@drawable/custom_checkbox"
+		android:checked="true"
+		app:layout_constraintLeft_toRightOf="@id/setBox2"
+		app:layout_constraintRight_toLeftOf="@id/setBox4"
+		app:layout_constraintTop_toBottomOf="@id/clock_minutes"
+		android:scaleX="1.7"
+		android:scaleY="1.7"/>
+
+	<CheckBox
+		android:id="@+id/setBox4"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_marginTop="20dp"
+		android:button="@drawable/custom_checkbox"
+		android:checked="true"
+		app:layout_constraintLeft_toRightOf="@id/setBox3"
+		app:layout_constraintRight_toLeftOf="@id/setBox5"
+		app:layout_constraintTop_toBottomOf="@id/clock_minutes"
+		android:scaleX="1.7"
+		android:scaleY="1.7"/>
+
+	<CheckBox
+		android:id="@+id/setBox5"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_marginTop="20dp"
+		android:button="@drawable/custom_checkbox"
+		android:checked="true"
+		app:layout_constraintLeft_toRightOf="@id/setBox4"
+		app:layout_constraintRight_toLeftOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/clock_minutes"
+		android:scaleX="1.7"
+		android:scaleY="1.7"/>
 
 </android.support.constraint.ConstraintLayout>
